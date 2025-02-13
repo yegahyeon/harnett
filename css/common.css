@@ -1,0 +1,123 @@
+@charset 'utf-8';
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+    font-size: 100%;
+    /* 16px-->1rem */
+    font-size: 62.5%;
+    /* 10px-->1rem */
+    --main-color: #27513a;
+    --sub-color: #f0f0f0;
+    --text-color: #333333;
+    --subtext-color: #888888;
+    --rds: 5rem; /* 50px */
+    --white50p: rgba(255, 255, 255, 0.5);
+    --black50p: rgba(0, 0, 0, 0.5);
+}
+
+::selection {
+    background: var(--sub-color);
+    color: #fff;
+}
+
+.hidden {
+    position: absolute;
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+body {
+    font: 1.8em/1.5 "Montserrat", sans-serif;
+    color: var(--text-color);
+    word-break: keep-all;
+    text-transform: capitalize;
+}
+
+#main h3,
+h4,
+h5,
+h6 {
+    font-family: "Pretendard", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.best-contents p,
+.new-contents p,
+.showroom-contents strong,
+.video-contents strong {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.btn-more {
+    border: 1px solid var(--main-color);
+    padding: 1rem 3.9rem;
+    font-weight: 800;
+    font-size: 1.7rem;
+    color: var(--main-color);
+    transition: 0.2s;
+}
+
+.btn-make-reservation {
+    border: 1px solid var(--main-color);
+    padding: 1rem 3rem;
+    font-weight: 800;
+    font-size: 1.7rem;
+    color: var(--main-color);
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.btn-more:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.btn-make-reservation:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+#footer strong {
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+#footer dl,
+#footer a {
+    font-size: 1.3rem;
+}
+
+#footer dt,
+#footer a {
+    font-weight: 400;
+}
+
+#footer dd {
+    font-weight: 300;
+}
+
+.footer-company p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #999;
+}
