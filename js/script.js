@@ -20,15 +20,15 @@ $(function () {
         loop: true,
         centeredSlides: true,
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 100,
 
         pagination: {
             el: ".video-slider .swiper-pagination",
             clickable: true,
         },
         navigation: {
-            nextEl: ".video-slider .swiper-button-next",
-            prevEl: ".video-slider .swiper-button-prev",
+            nextEl: ".video-slider .btn-next",
+            prevEl: ".video-slider .btn-prev",
         },
 
         on: {
