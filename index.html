@@ -4,16 +4,19 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>하네트</title>
-        <link rel="stylesheet" href="./css/style.css" />
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/common.css" />
 
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/script.js"></script>
     </head>
     <body>
         <header id="header">
@@ -316,24 +319,34 @@
             <section class="about-showroom">
                 <div class="inner">
                     <div class="showroom-contents">
-                        <div class="about-showroom-pic">
-                            <figure>
-                                <img
-                                    src="./image/showroom.jpg"
-                                    alt="showroom"
-                                />
-                            </figure>
-                        </div>
                         <div class="about-showroom-text">
-                            <h5>쇼룸 안내</h5>
+                            <h3>쇼룸 안내</h3>
                             <strong
-                                >소중한 이야기가 깃들어 흐르는 식탁, 아늑한
-                                침실에서 꿈을 꾸는 그 순간까지 당신의 공간에서
-                                만들어갈 다양함을 확인해 보세요</strong
+                                >소중한 이야기가 깃들어 흐르는 식탁,<br />
+                                아늑한 침실에서 꿈을 꾸는 그 순간까지<br />당신의
+                                공간에서 만들어갈 다양함을 확인해 보세요</strong
                             >
-                            <a href="" class="btn-make-reservation"
-                                >방문 예약</a
-                            >
+                            <a href="" class="btn-more">방문 예약</a>
+                        </div>
+                        <div class="about-showroom-pic">
+                            <a href="" class="Saig-Leather-Sofa">
+                                <figure class="showroom1">
+                                    <img
+                                        src="./image/Saig-Leather-Sofa-showroom.png"
+                                        alt="showroom"
+                                    />
+                                </figure>
+                                <p>SAIG LEATHER SOFA</p>
+                            </a>
+                            <a href="" class="BEAN-SOFA-TABLE">
+                                <figure class="showroom2">
+                                    <img
+                                        src="./image/showroom01.png"
+                                        alt="showroom"
+                                    />
+                                </figure>
+                                <p>BEAN SOFA TABLE</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -348,30 +361,51 @@
                         >
                         <a class="btn-more" href="#">더보기</a>
                     </div>
-                    <div class="visual-video">
+                    <div class="video">
                         <div class="swiper video-slider">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <iframe
+                                    <video
                                         src="./video/video_02.mp4"
-                                        frameborder="0"
-                                    ></iframe>
+                                        muted
+                                        autoplay
+                                        loop
+                                    ></video>
                                 </div>
                                 <div class="swiper-slide">
-                                    <iframe
+                                    <video
                                         src="./video/video_01.mp4"
-                                        frameborder="0"
-                                    ></iframe>
+                                        muted
+                                        autoplay
+                                        loop
+                                    ></video>
                                 </div>
                                 <div class="swiper-slide">
-                                    <iframe
+                                    <video
                                         src="./video/video_03.mp4"
-                                        frameborder="0"
-                                    ></iframe>
+                                        muted
+                                        autoplay
+                                        loop
+                                    ></video>
                                 </div>
-                                ...
+                                <div class="swiper-slide">
+                                    <video
+                                        src="./video/video_03.mp4"
+                                        muted
+                                        autoplay
+                                        loop
+                                    ></video>
+                                </div>
+                                <div class="swiper-slide">
+                                    <video
+                                        src="./video/video_03.mp4"
+                                        muted
+                                        autoplay
+                                        loop
+                                    ></video>
+                                </div>
                             </div>
                             <!-- If we need pagination -->
                             <div class="video-swiper-pagination"></div>
@@ -448,7 +482,5 @@
                 </div>
             </div>
         </footer>
-
-        <script src="./js/script.js"></script>
     </body>
 </html>
